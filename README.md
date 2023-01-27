@@ -1,13 +1,13 @@
 <h1> Water Jug Problem  in AI</h1>
 
 <p>In this Project , I Solved the famous <b>Water Jug</b> Problem in the <b> Artificial Intellegience </b> with <b> bruteforce stratergy </b>
-using <b>BFS</b> or <b>DFS</b> Algorithm (i.e. Uninformed search stratergy) to search through possible state space for <b> Desired Goal State</b>.
+using <b>BFS</b> and <b>DFS</b> Algorithm (i.e. Uninformed search stratergy) to search through possible state space for <b> Desired Goal State</b>.
   The<i>Main.java</i> File is the starting point of the program.
   
   <ul>
-    <li>We need to choose the required engine(i.e Algorithm) by assigning Object of BFS or DFS to 
+    <li>We need to choose the required engine(i.e Algorithm) by assigning Object of BFS or DFS class implementing 
       IEngine Interface.
-      <b>Note.:-</b> We hvae to provide the maximum depth for DFS algorithm, where DFS algorithm would go to the given depth at one side and then 
+      <b>Note.:-</b> We have to provide the maximum depth for DFS algorithm, where DFS algorithm would go to the given depth at one side and then 
       it would start backtracking.
      </li>
     <li>Next we need to create Object of Jugs by providing maximum capacity of Jugs(jug1,jug2).ie.Jugs(4,3)</li>
