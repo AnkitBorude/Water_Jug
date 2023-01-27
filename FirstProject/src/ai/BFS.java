@@ -17,6 +17,7 @@ public class BFS implements IEngine {
 			System.out.print("" + counter++);
 			tstate = queue.poll();
 			tstate.viewState();
+			System.out.println(tstate.getDepth());
 			if (tstate.isEqual(finalState)) {
 				System.out.println("Final State Found");
 				return;
