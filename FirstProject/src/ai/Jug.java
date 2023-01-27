@@ -1,4 +1,5 @@
 package ai;
+
 //djd
 class Jug {
 	static int Jug1MaxSize;
@@ -27,26 +28,28 @@ class Jug {
 
 	static class State {
 		private int currentJug1State = 0, currentJug2State = 0;
-		private int depth=0;
+		private int depth = 0;
 
 		State(int a, int b) {
 			currentJug1State = a;
 			currentJug2State = b;
 		}
-		State(int a,int b,int depth)
-		{
-			currentJug1State=a;
-			currentJug2State=b;
+
+		State(int a, int b, int depth) {
+			currentJug1State = a;
+			currentJug2State = b;
 			this.setDepth(depth);
 		}
-		public void viewState()
-		{
-			System.out.println("<"+this.currentJug1State+","+this.currentJug2State+">");
+
+		public void viewState() {
+			System.out.println("<" + this.currentJug1State + "," + this.currentJug2State + ">");
 		}
+
 		public int getSum() {
-			return currentJug1State+currentJug2State;
+			return currentJug1State + currentJug2State;
 
 		}
+
 		public int getCurrentJug1State() {
 			return currentJug1State;
 		}
@@ -62,17 +65,20 @@ class Jug {
 		public void setCurrentJug2State(int currentJug2State) {
 			this.currentJug2State = currentJug2State;
 		}
-		public boolean isEqual(State state)
-		{
-			return(state.getCurrentJug1State()==this.currentJug1State && state.getCurrentJug2State()==this.getCurrentJug2State());
+
+		public boolean isEqual(State state) {
+			return (state.getCurrentJug1State() == this.currentJug1State
+					&& state.getCurrentJug2State() == this.getCurrentJug2State());
 		}
-		public void getMax()
-		{
+
+		public void getMax() {
 			System.out.println(Jug.Jug1MaxSize);
 		}
+
 		public int getDepth() {
 			return depth;
 		}
+
 		public void setDepth(int depth) {
 			this.depth = depth;
 		}
