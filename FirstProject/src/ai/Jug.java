@@ -27,10 +27,17 @@ class Jug {
 
 	static class State {
 		private int currentJug1State = 0, currentJug2State = 0;
+		private int depth=0;
 
 		State(int a, int b) {
 			currentJug1State = a;
 			currentJug2State = b;
+		}
+		State(int a,int b,int depth)
+		{
+			currentJug1State=a;
+			currentJug2State=b;
+			this.setDepth(depth);
 		}
 		public void viewState()
 		{
@@ -62,6 +69,12 @@ class Jug {
 		public void getMax()
 		{
 			System.out.println(Jug.Jug1MaxSize);
+		}
+		public int getDepth() {
+			return depth;
+		}
+		public void setDepth(int depth) {
+			this.depth = depth;
 		}
 	}
 }
