@@ -1,0 +1,8 @@
+{nagar,pune}
+{nagar,shirur,pune}
+{3}
+{
+	{nagar,shirur,30}
+	{nagar,pune,50}
+	{shirur,pune,20}
+}
